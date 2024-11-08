@@ -24,10 +24,6 @@ class Header extends BaseView
             <link rel="icon" href="../../../../public/uploads/users/user1.jpeg"
                 type="image/x-icon" />
             <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-            <link rel="stylesheet" href="<?= APP_URL ?>/public/assets/client/css/style.css">
-            <title>Document</title>
 		    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
             <link type="text/css" rel="stylesheet" href="../public/assets/client/css/bootstrap.min.css"/>
