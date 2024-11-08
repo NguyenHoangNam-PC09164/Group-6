@@ -9,16 +9,19 @@ class Home extends BaseView
     public static function render($data = null)
     {
 ?>
+
+
+
         <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xs-6">
                         <div class="shop">
                             <div class="shop-img">
-                                <img src="../../../public/assets/client/img/shop01.png" alt="">
+                                <img src="../../../public/assets/client/img/product8.jpg" alt="" width="360px">
                             </div>
                             <div class="shop-body">
-                                <h3>Laptop<br>Bộ sưu tập</h3>
+                                <h3>Nikon<br>Bộ sưu tập</h3>
                                 <a href="#" class="cta-btn">Mua ngay <i class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
@@ -27,10 +30,10 @@ class Home extends BaseView
                     <div class="col-md-4 col-xs-6">
                         <div class="shop">
                             <div class="shop-img">
-                                <img src="../../../public/assets/client/img/shop03.png" alt="">
+                                <img src="../../../public/assets/client/img/product16.jpg" alt="">
                             </div>
                             <div class="shop-body">
-                                <h3>Phụ kiện<br>Bộ sưu tập</h3>
+                                <h3>Canon<br>Bộ sưu tập</h3>
                                 <a href="#" class="cta-btn">Mua ngay <i class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
@@ -39,10 +42,10 @@ class Home extends BaseView
                     <div class="col-md-4 col-xs-6">
                         <div class="shop">
                             <div class="shop-img">
-                                <img src="../../../public/assets/client/img/shop02.png" alt="">
+                                <img src="../../../public/assets/client/img/product21.jpg" alt="">
                             </div>
                             <div class="shop-body">
-                                <h3>Cameras<br>Bộ sưu tập</h3>
+                                <h3>Insta360 X3<br>Bộ sưu tập</h3>
                                 <a href="#" class="cta-btn">Mua ngay <i class="fa fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
@@ -59,10 +62,10 @@ class Home extends BaseView
                             <h3 class="title">Sản phẩm mới</h3>
                             <div class="section-nav">
                                 <ul class="section-tab-nav tab-nav">
-                                    <li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-                                    <li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
-                                    <li><a data-toggle="tab" href="#tab1">Cameras</a></li>
-                                    <li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+                                    <li class="active"><a data-toggle="tab" href="#tab1">Nikon</a></li>
+                                    <li><a data-toggle="tab" href="#tab1">Canon</a></li>
+                                    <li><a data-toggle="tab" href="#tab1">Sony</a></li>
+                                    <li><a data-toggle="tab" href="#tab1">Insta360 X3</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -75,7 +78,7 @@ class Home extends BaseView
                                     <div class="products-slick" data-nav="#slick-nav-1">
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product01.png" alt="">
+                                                <img src="../../../public/assets/client/img/product1.jpg" alt="">
                                                 <div class="product-label">
                                                     <span class="sale">-30%</span>
                                                     <span class="Mới">Mới</span>
@@ -105,7 +108,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product02.png" alt="">
+                                                <img src="../../../public/assets/client/img/product2.jpg" alt="">
                                                 <div class="product-label">
                                                     <span class="Mới">Mới</span>
                                                 </div>
@@ -134,7 +137,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product03.png" alt="">
+                                                <img src="../../../public/assets/client/img/product3.jpg" alt="">
                                                 <div class="product-label">
                                                     <span class="sale">-30%</span>
                                                 </div>
@@ -158,7 +161,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product04.png" alt="">
+                                                <img src="../../../public/assets/client/img/product4.jpg" alt="">
                                             </div>
                                             <div class="product-body">
                                                 <p class="product-Danh mục">Danh mục</p>
@@ -184,7 +187,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product05.png" alt="">
+                                                <img src="../../../public/assets/client/img/product5.jpg" alt="">
                                             </div>
                                             <div class="product-body">
                                                 <p class="product-Danh mục">Danh mục</p>
@@ -219,43 +222,7 @@ class Home extends BaseView
         </div>
 
         <div id="hot-deal" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="hot-deal">
-                            <ul class="hot-deal-countdown">
-                                <li>
-                                    <div>
-                                        <h3>02</h3>
-                                        <span>Ngày</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3>10</h3>
-                                        <span>Giờ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3>34</h3>
-                                        <span>Phút</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3>60</h3>
-                                        <span>Giây</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <h2 class="text-uppercase">Khuyến mãi cuối tuần</h2>
-                            <p>Giảm giá lên đến 50% cho các bộ sưu tập</p>
-                            <a class="primary-btn cta-btn" href="#">Mua ngay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
         <div class="section">
@@ -282,7 +249,7 @@ class Home extends BaseView
                                     <div class="products-slick" data-nav="#slick-nav-2">
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product06.png" alt="">
+                                                <img src="../../../public/assets/client/img/product6.jpg" alt="">
                                                 <div class="product-label">
                                                     <span class="sale">-30%</span>
                                                     <span class="Mới">Mới</span>
@@ -312,7 +279,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product07.png" alt="">
+                                                <img src="../../../public/assets/client/img/product7.jpg" alt="">
                                                 <div class="product-label">
                                                     <span class="Mới">Mới</span>
                                                 </div>
@@ -341,7 +308,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product08.png" alt="">
+                                                <img src="../../../public/assets/client/img/product8.jpg" alt="">
                                                 <div class="product-label">
                                                     <span class="sale">-30%</span>
                                                 </div>
@@ -365,7 +332,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product09.png" alt="">
+                                                <img src="../../../public/assets/client/img/product9.jpg" alt="">
                                             </div>
                                             <div class="product-body">
                                                 <p class="product-Danh mục">Danh mục</p>
@@ -391,7 +358,7 @@ class Home extends BaseView
 
                                         <div class="product">
                                             <div class="product-img">
-                                                <img src="../../../public/assets/client/img/product01.png" alt="">
+                                                <img src="../../../public/assets/client/img/product10.jpg" alt="">
                                             </div>
                                             <div class="product-body">
                                                 <p class="product-Danh mục">Danh mục</p>
@@ -424,8 +391,6 @@ class Home extends BaseView
             </div>
         </div>
 
-
-
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -440,7 +405,7 @@ class Home extends BaseView
                             <div>
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product07.png" alt="">
+                                        <img src="../../../public/assets/client/img/product11.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -451,7 +416,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product08.png" alt="">
+                                        <img src="../../../public/assets/client/img/product12.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -462,7 +427,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product09.png" alt="">
+                                        <img src="../../../public/assets/client/img/product13.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -475,7 +440,7 @@ class Home extends BaseView
                             <div>
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product01.png" alt="">
+                                        <img src="../../../public/assets/client/img/product14.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -486,7 +451,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product02.png" alt="">
+                                        <img src="../../../public/assets/client/img/product15.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -497,7 +462,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product03.png" alt="">
+                                        <img src="../../../public/assets/client/img/product16.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -521,7 +486,7 @@ class Home extends BaseView
                             <div>
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product04.png" alt="">
+                                        <img src="../../../public/assets/client/img/product17.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -532,7 +497,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product05.png" alt="">
+                                        <img src="../../../public/assets/client/img/product18.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -543,7 +508,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product06.png" alt="">
+                                        <img src="../../../public/assets/client/img/product19.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -555,7 +520,7 @@ class Home extends BaseView
                             <div>
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product07.png" alt="">
+                                        <img src="../../../public/assets/client/img/product20.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -566,7 +531,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product08.png" alt="">
+                                        <img src="../../../public/assets/client/img/product21.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -577,7 +542,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product09.png" alt="">
+                                        <img src="../../../public/assets/client/img/product22.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -603,7 +568,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product01.png" alt="">
+                                        <img src="../../../public/assets/client/img/product23.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -614,7 +579,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product02.png" alt="">
+                                        <img src="../../../public/assets/client/img/product24.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -625,7 +590,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product03.png" alt="">
+                                        <img src="../../../public/assets/client/img/product25.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -637,7 +602,7 @@ class Home extends BaseView
                             <div>
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product04.png" alt="">
+                                        <img src="../../../public/assets/client/img/product26.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -648,7 +613,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product05.png" alt="">
+                                        <img src="../../../public/assets/client/img/product27.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -659,7 +624,7 @@ class Home extends BaseView
 
                                 <div class="product-widget">
                                     <div class="product-img">
-                                        <img src="../../../public/assets/client/img/product06.png" alt="">
+                                        <img src="../../../public/assets/client/img/product1.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-Danh mục">Danh mục</p>
@@ -674,6 +639,7 @@ class Home extends BaseView
             </div>
 
         </div>
+        
 <?php
     }
 }

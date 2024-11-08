@@ -18,11 +18,9 @@ class Detail extends BaseView
 				<div class="row">
 					<div class="col-md-12">
 						<ul class="breadcrumb-tree">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">All Categories</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Headphones</a></li>
-							<li class="active">Product name goes here</li>
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Sản phẩm</a></li>
+							<li class="active">Chi tiết sản phẩm 1</li>
 						</ul>
 					</div>
 				</div>
@@ -42,50 +40,49 @@ class Detail extends BaseView
 					<div class="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product01.png" alt="">
+								<img src="../../../public/assets/client/img/product1.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product03.png" alt="">
+								<img src="../../../public/assets/client/img/product2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product06.png" alt="">
+								<img src="../../../public/assets/client/img/product3.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product08.png" alt="">
+								<img src="../../../public/assets/client/img/product4.jpg" alt="">
 							</div>
 						</div>
 					</div>
-					<!-- /Product main img -->
-
-					<!-- Product thumb imgs -->
+					
 					<div class="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product01.png" alt="">
+								<img src="../../../public/assets/client/img/product1.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product03.png" alt="">
+								<img src="../../../public/assets/client/img/product2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product06.png" alt="">
+								<img src="../../../public/assets/client/img/product3.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="../../../public/assets/client/img/product08.png" alt="">
+								<img src="../../../public/assets/client/img/product4.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<!-- /Product thumb imgs -->
 
 					<!-- Product details -->
+					
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">product name goes here</h2>
+							<h2 class="product-name"><?= $data['products']['name'] ?></h2>
 							<div>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -97,47 +94,59 @@ class Detail extends BaseView
 								<a class="review-link" href="#">10 Review(s) | Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h3>
-								<span class="product-available">In Stock</span>
+							<?php
+                                            if ($data['products']['discount_price'] > 0) :
+                                            ?>
+                                                
+										<h3 class="product-price"><strong class="text-danger"><?= number_format($data['products']['price'] - $data['products']['discount_price']) ?> đ</strong> <del class="product-old-price"><strike><?= number_format($data['products']['price']) ?> đ</strike> </del> </h3>
+										
+                                            <?php
+                                            else :
+                                            ?>
+                                                <h3 class="product-price"><?= number_format($data['products']['price']) ?> đ</h3>
+
+                                            <?php
+                                            endif;
+                                            ?>
+								<span class="product-available">Còn hàng</span>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p><?= $data['products']['description'] ?></p>
 
 							<div class="product-options">
 								<label>
-									Size
+									Kích thước
 									<select class="input-select">
 										<option value="0">X</option>
 									</select>
 								</label>
 								<label>
-									Color
+									Chất lượng
 									<select class="input-select">
-										<option value="0">Red</option>
+										<option value="0">Full HD</option>
 									</select>
 								</label>
 							</div>
 
 							<div class="add-to-cart">
 								<div class="qty-label">
-									Qty
+									Số lượng
 									<div class="input-number">
 										<input type="number">
 										<span class="qty-up">+</span>
 										<span class="qty-down">-</span>
 									</div>
 								</div>
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
 							</div>
 
 							<ul class="product-btns">
-								<li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-								<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+								<li><a href="#"><i class="fa fa-heart-o"></i> Thêm yêu thích</a></li>
+								<li><a href="#"><i class="fa fa-exchange"></i> Thêm so sánh</a></li>
 							</ul>
 
 							<ul class="product-links">
-								<li>Category:</li>
-								<li><a href="#">Headphones</a></li>
-								<li><a href="#">Accessories</a></li>
+								<li>Danh mục:</li>
+								<li><a href="#">Sony</a></li>
 							</ul>
 
 							<ul class="product-links">
@@ -157,8 +166,8 @@ class Detail extends BaseView
 						<div id="product-tab">
 							<!-- product tab nav -->
 							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
-								<li><a data-toggle="tab" href="#tab2">Details</a></li>
+								<li class="active"><a data-toggle="tab" href="#tab1">Mô tả</a></li>
+								<li><a data-toggle="tab" href="#tab2">Chi tiết</a></li>
 								<li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
 							</ul>
 							<!-- /product tab nav -->
@@ -382,22 +391,24 @@ class Detail extends BaseView
 
 					<div class="col-md-12">
 						<div class="section-title text-center">
-							<h3 class="title">Related Products</h3>
+							<h3 class="title">Sản phẩm liên quan</h3>
 						</div>
 					</div>
 
 					<!-- product -->
+
+					
 					<div class="col-md-3 col-xs-6">
 						<div class="product">
 							<div class="product-img">
-								<img src="../../../public/assets/client/img/product01.png" alt="">
+								<img src="../../../public/assets/client/img/product11.jpg" alt="">
 								<div class="product-label">
 									<span class="sale">-30%</span>
 								</div>
 							</div>
 							<div class="product-body">
 								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">product name goes here</a></h3>
+								<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
 								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 								<div class="product-rating">
 								</div>
@@ -412,27 +423,21 @@ class Detail extends BaseView
 							</div>
 						</div>
 					</div>
+					
 					<!-- /product -->
-
-					<!-- product -->
 					<div class="col-md-3 col-xs-6">
 						<div class="product">
 							<div class="product-img">
-								<img src="../../../public/assets/client/img/product02.png" alt="">
+								<img src="../../../public/assets/client/img/product14.jpg" alt="">
 								<div class="product-label">
-									<span class="new">NEW</span>
+									<span class="sale">-30%</span>
 								</div>
 							</div>
 							<div class="product-body">
 								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">product name goes here</a></h3>
+								<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
 								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
 								</div>
 								<div class="product-btns">
 									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
@@ -444,27 +449,19 @@ class Detail extends BaseView
 								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
 							</div>
 						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
+					</div><div class="col-md-3 col-xs-6">
 						<div class="product">
 							<div class="product-img">
-								<img src="../../../public/assets/client/img/product03.png" alt="">
+								<img src="../../../public/assets/client/img/product13.jpg" alt="">
+								<div class="product-label">
+									<span class="sale">-30%</span>
+								</div>
 							</div>
 							<div class="product-body">
 								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">product name goes here</a></h3>
+								<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
 								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-o"></i>
 								</div>
 								<div class="product-btns">
 									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
@@ -476,18 +473,17 @@ class Detail extends BaseView
 								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
 							</div>
 						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
+					</div><div class="col-md-3 col-xs-6">
 						<div class="product">
 							<div class="product-img">
-								<img src="../../../public/assets/client/img/product04.png" alt="">
+								<img src="../../../public/assets/client/img/product12.jpg" alt="">
+								<div class="product-label">
+									<span class="sale">-30%</span>
+								</div>
 							</div>
 							<div class="product-body">
 								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">product name goes here</a></h3>
+								<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
 								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 								<div class="product-rating">
 								</div>
@@ -502,7 +498,6 @@ class Detail extends BaseView
 							</div>
 						</div>
 					</div>
-					<!-- /product -->
 
 				</div>
 				<!-- /row -->
@@ -512,116 +507,7 @@ class Detail extends BaseView
 
 
 
-        <div class="container mt-5 mb-5">
-
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="<?= APP_URL ?>/public/uploads/products/<?= $data['product']['image'] ?>" alt="" width="100%">
-                </div>
-                <div class="col-md-6">
-                    <h5><?= $data['product']['name'] ?></h5>
-                    <p>
-                        <?= $data['product']['description'] ?>
-                    </p>
-                    <?php
-                    if ($data['product']['discount_price'] > 0) :
-                    ?>
-                        <h6>Giá gốc: <strike><?= number_format($data['product']['price']) ?> đ</strike></h6>
-                        <h6>Giá giảm: <strong class="text-danger"><?= number_format($data['product']['price'] - $data['product']['discount_price']) ?> đ</strong></h6>
-
-                    <?php
-                    else :
-                    ?>
-                        <h6>Giá tiền: <?= number_format($data['product']['price']) ?> đ</h6>
-                    <?php
-                    endif;
-                    ?>
-
-                    <form action="#" method="post">
-                        <input type="hidden" name="method" id="" value="POST">
-                        <input type="hidden" name="id" id="" value="<?= $data['product']['id'] ?>" required>
-                        <button type="submit" class="btn btn-sm btn-outline-success">Thêm vào giỏ hàng</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="row d-flex justify-content-center mt-100 mb-100">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Bình luận mới nhất</h4>
-                        </div>
-                        <div class="comment-widgets">
-
-                            <!-- Comment Row -->
-                            <div class="d-flex flex-row comment-row m-t-0">
-                                <div class="p-2">
-
-                                    <img src="<?= APP_URL ?>/public/uploads/users/user1.jpeg" alt="user" width="50" class="rounded-circle">
-                                </div>
-                                <div class="comment-text w-100">
-                                    <h6 class="font-medium">Username</h6>
-                                    <span class="m-b-15 d-block">Good product...</span>
-                                    <div class="comment-footer">
-                                        <span class="text-muted float-right">2024-7-8 19:19:19</span>
-
-                                        <button type="button" class="btn btn-cyan btn-sm" data-toggle="collapse" data-target="#comment" aria-expanded="false" aria-controls="comment">Sửa</button>
-                                        <form action="#" method="post" onsubmit="return confirm('Chắc chưa?')" style="display: inline-block">
-                                            <input type="hidden" name="method" value="DELETE" id="">
-                                            <input type="hidden" name="product_id" value="" id="">
-                                            <button type="submit" class="btn btn-danger btn-sm">Xoá</button>
-
-                                        </form>
-                                        <div class="collapse" id="comment">
-                                            <div class="card card-body mt-5">
-                                                <form action="#" method="post">
-                                                    <input type="hidden" name="method" value="PUT" id="">
-                                                    <input type="hidden" name="product_id" value="" id="">
-                                                    <div class="form-group">
-                                                        <label for="">Bình luận</label>
-                                                        <textarea class="form-control rounded-0" name="content" id="" rows="3" placeholder="Nhập bình luận...">Good product...</textarea>
-                                                    </div>
-                                                    <div class="comment-footer">
-                                                        <button type="submit" class="btn btn-cyan btn-sm">Gửi</button>
-                                                    </div>
-                                                </form>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex flex-row comment-row">
-
-                                <div class="p-2">
-
-                                    <img src="<?= APP_URL ?>/public/uploads/users/user1.jpeg" alt="user" width="50" class="rounded-circle">
-                                </div>
-                                <div class="comment-text w-100">
-                                    <h6 class="font-medium">Username</h6>
-                                    <form action="#" method="post">
-                                        <input type="hidden" name="method" value="POST" id="" required>
-                                        <div class="form-group">
-                                            <label for="">Bình luận</label>
-                                            <textarea class="form-control rounded-0" name="content" id="" rows="3" placeholder="Nhập bình luận..." required></textarea>
-                                        </div>
-                                        <div class="comment-footer">
-                                            <button type="submit" class="btn btn-cyan btn-sm">Gửi</button>
-                                        </div>
-                                    </form>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
+       
 
 
 

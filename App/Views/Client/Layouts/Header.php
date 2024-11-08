@@ -96,7 +96,7 @@ class Header extends BaseView
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="../../../public/assets/client/img/product01.png" alt="">
+													<img src="../../../public/assets/client/img/product1.jpg" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
@@ -107,7 +107,7 @@ class Header extends BaseView
 
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="../../../public/assets/client/img/product02.png" alt="">
+													<img src="../../../public/assets/client/img/product2.jpg" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">Sản phẩm 2</a></h3>
@@ -143,8 +143,8 @@ class Header extends BaseView
 			<div class="container">
 				<div id="responsive-nav">
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Trang chủ</a></li>
-						<li><a href="#">Sản phẩm</a></li>
+						<li class="active"><a href="/">Trang chủ</a></li>
+						<li><a href="/products">Sản phẩm</a></li>
 						<li><a href="#">Giới thiệu</a></li>
                         <li><a href="#">Tin tức</a></li>
 						<li><a href="#">Liên hệ</a></li>
