@@ -116,8 +116,6 @@ class Detail extends BaseView
                             </div>
 
                         </div>
-
-
                     </div>
                 </div>
             </div>
