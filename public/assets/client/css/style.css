@@ -843,6 +843,14 @@ textarea.input {
 .hot-deal .cta-btn {
   margin-top: 15px;
 }
+#hot-deal{
+  background-image: url('../img/img_one_banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 165px 0 165px;
+  height: 350px;
+}
+
 
 /*=========================================================
 	06 -> PRODUCT
@@ -870,8 +878,10 @@ textarea.input {
   position: relative;
 }
 
-.product .product-img>img {
+.product .product-img>img{
   width: 100%;
+  width: 90%;
+  margin: 15px;
 }
 
 .product .product-img .product-label {
