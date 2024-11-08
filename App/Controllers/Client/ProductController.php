@@ -72,7 +72,7 @@ class ProductController
                 'description' => 'Mô tả sản phẩm 4',
                 'price' => 100000,
                 'discount_price' => 10000,
-                'image' => '../../../public/assets/client/img/product11.jpg',
+                'image' => '../../../public/assets/client/img/product14.jpg',
                 'status' => 1
             ],
             [
@@ -81,7 +81,7 @@ class ProductController
                 'description' => 'Mô tả sản phẩm 2',
                 'price' => 200000,
                 'discount_price' => 20000,
-                'image' => '../../../public/assets/client/img/product12.jpg',
+                'image' => '../../../public/assets/client/img/product15.jpg',
                 'status' => 1
             ],
             [
@@ -90,7 +90,7 @@ class ProductController
                 'description' => 'Mô tả sản phẩm 3',
                 'price' => 300000,
                 'discount_price' => 30000,
-                'image' => '../../../public/assets/client/img/product13.jpg',
+                'image' => '../../../public/assets/client/img/product16.jpg',
                 'status' => 1
             ],[
                 'id' => 7,
@@ -98,7 +98,7 @@ class ProductController
                 'description' => 'Mô tả sản phẩm 1',
                 'price' => 100000,
                 'discount_price' => 10000,
-                'image' => '../../../public/assets/client/img/product11.jpg',
+                'image' => '../../../public/assets/client/img/product17.jpg',
                 'status' => 1
             ],
             [
@@ -107,7 +107,7 @@ class ProductController
                 'description' => 'Mô tả sản phẩm 2',
                 'price' => 200000,
                 'discount_price' => 20000,
-                'image' => '../../../public/assets/client/img/product12.jpg',
+                'image' => '../../../public/assets/client/img/product18.jpg',
                 'status' => 1
             ],
             [
@@ -116,7 +116,7 @@ class ProductController
                 'description' => 'Mô tả sản phẩm 3',
                 'price' => 300000,
                 'discount_price' => 30000,
-                'image' => '../../../public/assets/client/img/product13.jpg',
+                'image' => '../../../public/assets/client/img/product19.jpg',
                 'status' => 1
             ],
 

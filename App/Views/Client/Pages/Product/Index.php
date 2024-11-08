@@ -20,15 +20,15 @@ class Index extends BaseView
 					<div id="aside" class="col-md-3">
 						<!-- aside Widget -->
 						<div class="aside">
-							<h3 class="aside-title">Categories</h3>
+							<h3 class="aside-title">Danh mục</h3>
 							<div class="checkbox-filter">
 
 								<div class="input-checkbox">
 									<input type="checkbox" id="category-1">
 									<label for="category-1">
 										<span></span>
-										Laptops
-										<small>(120)</small>
+										Máy ảnh DSLR
+										<small>(3)</small>
 									</label>
 								</div>
 
@@ -36,8 +36,8 @@ class Index extends BaseView
 									<input type="checkbox" id="category-2">
 									<label for="category-2">
 										<span></span>
-										Smartphones
-										<small>(740)</small>
+										Máy ảnh Mirrorless
+										<small>(7)</small>
 									</label>
 								</div>
 
@@ -45,8 +45,8 @@ class Index extends BaseView
 									<input type="checkbox" id="category-3">
 									<label for="category-3">
 										<span></span>
-										Cameras
-										<small>(1450)</small>
+										Máy  ảnh Compact
+										<small>(4)</small>
 									</label>
 								</div>
 
@@ -54,8 +54,8 @@ class Index extends BaseView
 									<input type="checkbox" id="category-4">
 									<label for="category-4">
 										<span></span>
-										Accessories
-										<small>(578)</small>
+										Máy ảnh Instax
+										<small>(5)</small>
 									</label>
 								</div>
 
@@ -63,8 +63,8 @@ class Index extends BaseView
 									<input type="checkbox" id="category-5">
 									<label for="category-5">
 										<span></span>
-										Laptops
-										<small>(120)</small>
+										Máy ảnh Medium Format
+										<small>(2)</small>
 									</label>
 								</div>
 
@@ -72,8 +72,8 @@ class Index extends BaseView
 									<input type="checkbox" id="category-6">
 									<label for="category-6">
 										<span></span>
-										Smartphones
-										<small>(740)</small>
+										Máy ảnh Film
+										<small>(7)</small>
 									</label>
 								</div>
 							</div>
@@ -82,7 +82,7 @@ class Index extends BaseView
 
 						<!-- aside Widget -->
 						<div class="aside">
-							<h3 class="aside-title">Price</h3>
+							<h3 class="aside-title">Giá</h3>
 							<div class="price-filter">
 								<div id="price-slider"></div>
 								<div class="input-number price-min">
@@ -102,13 +102,13 @@ class Index extends BaseView
 
 						<!-- aside Widget -->
 						<div class="aside">
-							<h3 class="aside-title">Brand</h3>
+							<h3 class="aside-title">Thương hiệu</h3>
 							<div class="checkbox-filter">
 								<div class="input-checkbox">
 									<input type="checkbox" id="brand-1">
 									<label for="brand-1">
 										<span></span>
-										SAMSUNG
+										SONY
 										<small>(578)</small>
 									</label>
 								</div>
@@ -116,7 +116,7 @@ class Index extends BaseView
 									<input type="checkbox" id="brand-2">
 									<label for="brand-2">
 										<span></span>
-										LG
+										CANON
 										<small>(125)</small>
 									</label>
 								</div>
@@ -124,7 +124,7 @@ class Index extends BaseView
 									<input type="checkbox" id="brand-3">
 									<label for="brand-3">
 										<span></span>
-										SONY
+										NIKON
 										<small>(755)</small>
 									</label>
 								</div>
@@ -158,15 +158,15 @@ class Index extends BaseView
 
 						<!-- aside Widget -->
 						<div class="aside">
-							<h3 class="aside-title">Top selling</h3>
+							<h3 class="aside-title">Bán chạy nhất</h3>
 							<div class="product-widget">
 								<div class="product-img">
 									<img src="../../../public/assets/client/img/product01.png" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
-									<h3 class="product-name"><a href="#">product name goes here</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
+									<h4 class="product-price">980.000đ <del class="product-old-price">990.000đ</del></h4>
 								</div>
 							</div>
 
@@ -176,8 +176,8 @@ class Index extends BaseView
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
-									<h3 class="product-name"><a href="#">product name goes here</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
+									<h4 class="product-price">980.000đ<del class="product-old-price">990.000đ</del></h4>
 								</div>
 							</div>
 
@@ -187,8 +187,8 @@ class Index extends BaseView
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
-									<h3 class="product-name"><a href="#">product name goes here</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h3 class="product-name"><a href="#">Sản phẩm 1</a></h3>
+									<h4 class="product-price">980.000đ <del class="product-old-price">990.000đ</del></h4>
 								</div>
 							</div>
 						</div>
@@ -202,15 +202,15 @@ class Index extends BaseView
 						<div class="store-filter clearfix">
 							<div class="store-sort">
 								<label>
-									Sort By:
+									Sắp xếp:
 									<select class="input-select">
-										<option value="0">Popular</option>
-										<option value="1">Position</option>
+										<option value="0">Phổ biến</option>
+										<option value="1">Nổi bật</option>
 									</select>
 								</label>
 
 								<label>
-									Show:
+									Xem:
 									<select class="input-select">
 										<option value="0">20</option>
 										<option value="1">50</option>
@@ -249,7 +249,7 @@ class Index extends BaseView
                                             if ($item['discount_price'] > 0) :
                                             ?>
                                                 
-										<h4 class="product-price"><strong class="text-danger"><?= number_format($item['price'] - $item['discount_price']) ?> đ</strong> <del class="product-old-price"><strike><?= number_format($item['price']) ?> đ</strike> </del> </h4>
+										<h4 class="product-price"><strong><?= number_format($item['price'] - $item['discount_price']) ?> đ</strong> <del class="product-old-price"><strike><?= number_format($item['price']) ?> đ</strike> </del> </h4>
 										
                                             <?php
                                             else :
@@ -296,7 +296,7 @@ class Index extends BaseView
 
 						<!-- store bottom filter -->
 						<div class="store-filter clearfix">
-							<span class="store-qty">Showing 20-100 products</span>
+							
 							<ul class="store-pagination">
 								<li class="active">1</li>
 								<li><a href="#">2</a></li>
